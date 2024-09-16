@@ -28,13 +28,54 @@
     <link rel="stylesheet" href="assets/css/style.css" />
 
 
-    
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<!-- Popper.js (required for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 <style>
     img.firstimg {
-    height: 459px;
+        height: auto;
     width:100%;
 }
+
+.blog1{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+@media (max-width: 991px) {
+    
+.logos {
+    margin-top: -70px;
+}
+
+
+.header-navigation .primary-menu li {
+    display: inline-block;
+    line-height: 56px;
+    margin-top: 10px;
+    position: relative;
+}
+}
+
+@media (max-width: 575px) {
+    .page-title-area .title {
+        margin-top: 62px;
+        font-size: 46px;
+    }
+}
+
+
 </style>
     
 </head>
@@ -81,7 +122,7 @@
         <div class="header-navigation">
             <div class="container-fluid d-flex align-items-center justify-content-between">
                 <div class="header-left">
-                    <div class="site-logo">
+                    <div class="site-logo logos"  >
                         <a href="index.html"><img src="assets/img/logo-2.png" alt="Omnivus"></a>
                     </div>
                 </div>
@@ -192,7 +233,7 @@
                         <section class="faq-section section-gap">
     <div class="container">
         <div class="row align-items-center justify-content-center">
-            <div class="col-lg-12 col-md-10">
+            <div class="col-lg-12 col-md-12  blog1">
                 <div class="accordion-three accordion-three-two" id="accordionExample">
                     <div class="card">
                         <div class="card-header" id="headingOne"> 
@@ -311,6 +352,14 @@
                             <li><i class="fal fa-check"></i>Lorem ipsum dolor sit amet, consectetur</li>
                             <li><i class="fal fa-check"></i>Lorem ipsum dolor sit amet, consectetur</li>
                         </ul>
+
+                        <blockquote class="mt-40 mb-40">
+                            <cite>by Hetmayar</cite>
+                            Choices to take a holiday and travelling out in this pandemic situation are limited. Why not take a staycation.
+                            <div class="quote-icon">
+                                <img src="assets/img/blog/quote-icon.png" alt="quote">
+                            </div>
+                        </blockquote>
 
                         <section class="testimonials-section section-gap">
                             <div class="container">
