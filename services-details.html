@@ -42,7 +42,7 @@
 
 
 <style>
-    img.firstimg {
+    /* img.firstimg {
         height: auto;
     width:100%;
 }
@@ -73,7 +73,150 @@
         margin-top: 62px;
         font-size: 46px;
     }
+} */
+
+
+</style>
+
+<style>
+   
+    body {
+        margin:0;
+        font-family:Arial;
+    }
+    .header-four {
+        /* background-color: #333; */
+        position: absolute;
+        top: 0;
+        z-index: 1000;
+    }
+    .header-navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .site-logo img {   
+    margin-left: 90px;
+    max-width: 100px;
+    }
+    .primary-menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    .primary-menu li {
+        position: relative;
+    }
+    .primary-menu a {
+        color: #f2f2f2;
+        text-decoration: none;
+        padding: 14px 20px;
+        display: block;
+    }
+    .primary-menu a:hover, .current a {
+        /* background-color: #04AA6D; */
+        color: white;
+    }
+
+    .site-nav-menu {
+        margin-left: 30%;
+    }
+
+    .submenu {
+        /* margin-left: 50px; */
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 120px;
+        z-index: 1;
+    }
+    .submenu a {
+        color: black;
+        padding: 1px 6px;
+        text-decoration: none;
+        display: block;
+    }
+    .primary-menu li:hover .submenu {
+        display: block;
+    }
+
+    .header-navigation .navbar-btn a {
+    margin-top: 4px;
+	font-size: 17px;
+	font-weight: 700;
+	background-color: #0c59db;
+	color: #fff;
+	border: 2px solid #0c59db;
+	border-radius: 5px;
+	padding: 14px 9px;
 }
+
+    @media screen and (max-width: 600px) {
+        /* .primary-menu {
+            flex-direction: column;
+            display: none;
+        }
+        .header-navigation.responsive .primary-menu {
+            display: flex;
+        } */
+      
+        .header-navigation {
+            margin-left: 10px;
+        justify-content: center;
+        }
+        .site-logo img {
+            /* margin-top: -163px; */
+            text-align: center;
+    margin-top: -155px;
+    margin-left: 118px;
+    margin-right: -200px;
+    max-width: 61px;
+           
+        /* height: 50px; */
+    }
+        .primary-menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    .primary-menu li {
+        position: relative;
+    }
+    .primary-menu a {
+        color: #f2f2f2;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+        gap: 2px;
+        font-size: 5px;
+    }
+    .primary-menu a:hover, .current a {
+        /* background-color: #04AA6D; */
+        color: white;
+    }
+    .site-nav-menu {
+        margin-left: 0px;
+    }
+    .submenu {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        z-index: 1;
+    }
+    .submenu a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    /* .primary-menu li:hover .submenu {
+        display: block;
+    } */
+    }
 
 
 </style>
@@ -95,7 +238,7 @@
     <!--====== Preloader End ======-->
 
     <!--====== Header Part Start ======-->
-    <header class="header-two header-full-width sticky-header">
+    <!-- <header class="header-two header-full-width sticky-header">
         <div class="header-topbar d-none d-sm-block">
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-between">
@@ -184,7 +327,145 @@
                 </div>
             </div>
         </div>
+    </header> -->
+    
+    
+    <header class="header-four header-full-width sticky-header">
+        <div class="header-navigation">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <div class="header-left">
+                    <div class="site-logo">
+                        <a href="index.html" class="imge">
+                            <img src="assets/img/logo-3.png" alt="Omnivus" class="main-logo">
+                            <img src="assets/img/logo-2.png" alt="Omnivus" class="sticky-logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="site-nav-menu">
+                    <ul class="primary-menu">
+                        <li class="current">
+                            <a href="index.html">Home</a>
+                             <!-- <ul class="submenu">
+                                <li><a href="index-2.html">Home 1</a></li>
+                                <li><a href="index-3.html">Home 2</a></li>
+                                <li><a href="index-4.html">Home 3</a></li>
+                                <li><a href="index-5.html">Home 4</a></li>
+                                <li><a href="index-6.html">Home 5</a></li>
+                                <li><a href="index-7.html">Home 6</a></li>
+                                <li>
+                                    <a href="#">OnePage</a>
+                                    <ul class="submenu">
+                                        <li><a href="index-onepage.html">Home 1</a></li>
+                                        <li><a href="index-2-onepage.html">Home 2</a></li>
+                                        <li><a href="index-3-onepage.html">Home 3</a></li>
+                                        <li><a href="index-4-onepage.html">Home 4</a></li>
+                                        <li><a href="index-5-onepage.html">Home 5</a></li>
+                                        <li><a href="index-6-onepage.html">Home 6</a></li>
+                                    </ul>
+                                </li>
+                            </ul> ------->
+                        </li>
+                        
+                        <li>
+                            <a href="services-details.html">Services</a>
+                            <ul class="submenu" style="margin-left: 50px;">
+                                <li><a href="social-media-services.html">  Social Media ►</a>
+                                    <ul class="submenu l">
+                                        <li><a href="social-media-management-services.html">Social Media Management</a></li>
+                                        <li><a href="social-media-advertising-solutions.html">Social Media Advertising</a></li>
+                                        <li><a href="social-media-strategy-development.html">Social Media Strategy Development</a></li>
+                                        <li><a href="social-media-analytics-reporting.html">Social Media Analytics and Reporting</a></li>
+                                    </ul>
+                                <li><a href="online-lead-generation-consultation.html"> Lead Generation ►</a>
+                                        <ul class="submenu">
+                                            <li><a href="lead-magnet-creation-optimization.html">Lead Magnet Creation and Optimization</a></li>
+                                            <li><a href="conversion-rate-optimization-lead-generation.html">Conversion Rate Optimization</a></li>
+                                            <li><a href="targeted-audience-profiling-lead-generation.html">Targeted Audience Profiling</a></li>
+                                            <li><a href="automated-lead-nurturing-campaigns.html">Automated Lead Nurturing Campaigns</a></li>
+                                        </ul>
+                                        <li><a href="seo-services-in-pune.html">SEO ►</a>
+                                            <ul class="submenu">
+                                                <li><a href="local-seo-services.html">Local SEO Services</a></li>
+                                                <li><a href="seo-audit-analysis.html">SEO Audit and Analysis</a></li>
+                                                <li><a href="google-map-optimization.html">Google Map Optimization</a></li>
+                                            </ul>
+                                        </li>                                
+                                        <li><a href="ppc-integration.html">PPC ►</a>
+                                            <ul class="submenu">
+                                                <li><a href="ppc-keyword-research-analysis.html">Keyword Research</a></li>
+                                                <li><a href="ad-campaign-setup-management.html">Ad Campaign Management</a></li>
+                                                <li><a href="landing-page-optimization-ppc.html">Landing Page Optimization</a></li>
+                                                <li><a href="ppc-performance-tracking-reporting.html">Performance Tracking</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="other-omnigross-services.html">Other ►</a>
+                                            <ul class="submenu">
+                                                <li><a href="whatsapp-marketing-solutions.html">WhatsApp Marketing Services</a></li>
+                                                <li><a href="secure-payment-gateway-solutions.html">Payment Gateway Integration</a></li>
+                                                <li><a href="professional-email-marketing.html">Email Marketing Solution</a></li>
+                                                <li><a href="creative-graphics-design-services.html">Graphics Design Solution</a></li>
+                                                <li><a href="website-designing-services.html">Website Designing Services</a></li>
+                                                <li><a href="reliable-web-hosting-services.html">Web Hosting Solution</a></li>
+                                                <li><a href="enterprise-resource-planning-solutions.html">ERP Solution</a></li>
+                                            </ul>
+                                        </li>
+                                    </li>
+                                </li>
+                        
+                            </ul>
+                            
+                        </li>
+                        <li>
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">Blog</a>
+                            <ul class="submenu">
+                                <li><a href="blog-standard.html">Blog Standard</a></li>
+                                <li><a href="blog-grid.html">Blog Grid</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Portfolio</a>
+                            <!-- <ul class="submenu">
+                                <li><a href="case-study.html">case study</a></li>
+                                <li><a href="case-details.html">Case Details</a></li>
+                                <li><a href="coming-soon.html">coming soon</a></li>
+                                <li><a href="error.html">error</a></li>
+                                <li><a href="faq.html">faq</a></li>
+                                <li><a href="pricing.html">pricing</a></li>
+                                <li><a href="shop.html">shop</a></li>
+                                <li><a href="shop-details.html">shop Details</a></li>
+                                <li><a href="cart.html">Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                                <li><a href="privacy.html">Privacy</a></li>
+                                <li><a href="team.html">team</a></li>
+                                <li><a href="team-details.html">team details</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <div class="navbar-btn">
+                            <a href="#">Get A Quote</a>
+                        </div>
+                    <!-- <a href="#" class="nav-close"><i class="fal fa-times"></i></a> -->
+                </ul>
+                </div>
+                    <!-- <div class="header-extra d-flex align-items-center">
+                        <div class="nav-toggler">
+                            <span></span><span></span><span></span>
+                        </div> -->
+                        <!-- <div class="navbar-btn">
+                        <a href="#">Get A Quote</a>
+                    </div>
+                </div> -->    
+            </div>
+        </div>
     </header>
+    
     <!--====== Header Part End ======-->
 
     <!--====== Page Title start ======-->
@@ -211,7 +492,7 @@
                         </h3>
 
                         <figure class="mt-40 mb-40  firstimg1">
-                        <img src="assets/img/feature-2.jpg" alt="Business insurance feature" class="firstimg" />
+                        <img src="assets/img/feature-4.jpg" alt="Business insurance feature" class="firstimg" />
                         </figure>
 
                         <ul class="post-meta">

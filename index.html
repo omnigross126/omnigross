@@ -24,89 +24,132 @@
     <!--====== Main Css ======-->
     <link rel="stylesheet" href="assets/css/style.css" />
 
+    
+
+
 
 <style>
-@media (max-width: 991px) {
-    /* Make the logo and navigation stack vertically */
-    .header-navigation {
-        flex-direction: column;
-        align-items: center;
+    body {
+        margin:0;
+        font-family:Arial;
     }
-
-    .site-nav-menu {
+    .header-four {
+        /* background-color: #333; */
+        position: absolute;
+        top: 0;
+        z-index: 1000;
+    }
+    .header-navigation {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        margin-top: 10px;
+        justify-content: space-between;
+        padding: 10px 20px;
     }
-
-    .header-navigation .primary-menu {
-        
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        margin-top: 10px;
+    .site-logo img {   
+    margin-left: 90px;
+    max-width: 100px;
     }
-
-    .header-navigation.open .primary-menu {
-        display: block; /* Show when mobile navigation is toggled */
+    .primary-menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
     }
-
     .primary-menu li {
+        position: relative;
+    }
+    .primary-menu a {
+        color: #f2f2f2;
+        text-decoration: none;
+        padding: 14px 20px;
         display: block;
-        line-height: 40px;
     }
-
-    .nav-toggler {
+    .primary-menu a:hover, .current a {
+        /* background-color: #04AA6D; */
+        color: white;
+    }
+    .submenu {
+        /* margin-left: 50px; */
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 120px;
+        z-index: 1;
+    }
+    .submenu a {
+        color: black;
+        padding: 1px 6px;
+        text-decoration: none;
         display: block;
-        cursor: pointer;
     }
-
-    .navbar-btn {
-        margin-top: 15px;
-    }
-}
-
-/* Further adjustments for smaller screens like smartphones */
-@media (max-width: 767px) {
-    .header-topbar {
-        padding: 8px 0;
-        font-size: 12px;
-    }
-
-    ul, ol {
-    margin: 62px;
-    padding: 16px;
-    }
-
-    .header-navigation {
-        flex-direction: column;
-    }
-
-    .site-logo img {
-        width: 101px;
-    }
-
-    .header-navigation .primary-menu li {
-        line-height: 30px;
-        padding: 5px 0;
-    }
-
-    /* Mobile toggle button styling */
-    .nav-toggler span {
+    .primary-menu li:hover .submenu {
         display: block;
-        width: 25px;
-        height: 3px;
-        background: #333;
-        margin: 5px auto;
     }
-}
+    @media screen and (max-width: 600px) {
+        /* .primary-menu {
+            flex-direction: column;
+            display: none;
+        }
+        .header-navigation.responsive .primary-menu {
+            display: flex;
+        } */
+      
+        .header-navigation {
+            margin-left: 10px;
+        justify-content: center;
+        }
+        .site-logo img {
+            /* margin-top: -163px; */
+            text-align: center;
+    margin-top: -155px;
+    margin-left: 118px;
+    margin-right: -200px;
+    max-width: 61px;
+           
+        /* height: 50px; */
+    }
+        .primary-menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    .primary-menu li {
+        position: relative;
+    }
+    .primary-menu a {
+        color: #f2f2f2;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+        gap: 2px;
+        font-size: 5px;
+    }
+    .primary-menu a:hover, .current a {
+        /* background-color: #04AA6D; */
+        color: white;
+    }
+    .submenu {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        z-index: 1;
+    }
+    .submenu a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    /* .primary-menu li:hover .submenu {
+        display: block;
+    } */
+    }
+</style>
 
 
 
-
-    </style>
-  
     
 
 </head>
@@ -128,7 +171,116 @@
 
     <!--====== Header Part Start ======-->
 
+
+
     <header class="header-four header-full-width sticky-header">
+        <div class="header-navigation">
+            <div class="header-left">
+                <div class="site-logo">
+                    <a href="index.html" class="imge">
+                        <img src="assets/img/logo-3.png" alt="Omnivus" class="main-logo">
+                        <img src="assets/img/logo-2.png" alt="Omnivus" class="sticky-logo">
+                    </a>
+                </div>
+            </div>
+            <div class="site-nav-menu">
+                <ul class="primary-menu">
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="services-details.html">Services</a>
+                        <ul class="submenu" style="margin-left: 50px;">
+                            <li><a href="social-media-services.html">Social Media</a>
+                                <ul class="submenu">
+                                    <li><a href="social-media-management-services.html">Social Media Management</a></li>
+                                    <li><a href="social-media-advertising-solutions.html">Social Media Advertising</a></li>
+                                    <li><a href="social-media-strategy-development.html">Social Media Strategy Development</a></li>
+                                    <li><a href="social-media-analytics-reporting.html">Social Media Analytics and Reporting</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="online-lead-generation-consultation.html">Lead Generation</a>
+                                <ul class="submenu" >
+                                    <li><a href="lead-magnet-creation-optimization.html">Lead Magnet Creation and Optimization</a></li>
+                                    <li><a href="conversion-rate-optimization-lead-generation.html">Conversion Rate Optimization</a></li>
+                                    <li><a href="targeted-audience-profiling-lead-generation.html">Targeted Audience Profiling</a></li>
+                                    <li><a href="automated-lead-nurturing-campaigns.html">Automated Lead Nurturing Campaigns</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="seo-services-in-pune.html">SEO</a>
+                                <ul class="submenu">
+                                    <li><a href="local-seo-services.html">Local SEO Services</a></li>
+                                    <li><a href="seo-audit-analysis.html">SEO Audit and Analysis</a></li>
+                                    <li><a href="google-map-optimization.html">Google Map Optimization</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="ppc-integration.html">PPC</a>
+                                <ul class="submenu">
+                                    <li><a href="ppc-keyword-research-analysis.html">Keyword Research</a></li>
+                                    <li><a href="ad-campaign-setup-management.html">Ad Campaign Management</a></li>
+                                    <li><a href="landing-page-optimization-ppc.html">Landing Page Optimization</a></li>
+                                    <li><a href="ppc-performance-tracking-reporting.html">Performance Tracking</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="other-omnigross-services.html">Other ►</a>
+                                <ul class="submenu">
+                                    <li><a href="whatsapp-marketing-solutions.html">WhatsApp Marketing Services</a></li>
+                                    <li><a href="secure-payment-gateway-solutions.html">Payment Gateway Integration</a></li>
+                                    <li><a href="professional-email-marketing.html">Email Marketing Solution</a></li>
+                                    <li><a href="creative-graphics-design-services.html">Graphics Design Solution</a></li>
+                                    <li><a href="website-designing-services.html">Website Designing Services</a></li>
+                                    <li><a href="reliable-web-hosting-services.html">Web Hosting Solution</a></li>
+                                    <li><a href="enterprise-resource-planning-solutions.html">ERP Solution</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Portfolio</a>
+                        <ul class="submenu" style="margin-left: 50px;">
+                            <li><a href="case-study.html">case study</a>
+                                <ul class="submenu">
+                                    <li><a href="coming-soon.html">coming soon</a></li>
+                                    <li><a href="error.html">error</a></li>
+                                    <li><a href="faq.html">faq</a></li>
+                                    <li><a href="pricing.html">pricing</a></li>
+                                    <li><a href="shop.html">shop</a></li>
+                                    <li><a href="shop-details.html">shop Details</a></li>
+                                    <li><a href="cart.html">Cart</a></li>
+                                    <li><a href="checkout.html">Checkout</a></li>
+                                    <li><a href="privacy.html">Privacy</a></li>
+                                    <li><a href="team.html">team</a></li>
+                                    <li><a href="team-details.html">team details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="case-details.html">Case Details</a></li>
+                            
+                        </ul></li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                    <!-- <li class="navbar-btn">
+                        <a href="#">Get A Quote</a>
+                    </li> -->
+                    <!-- <div class="header-extra d-flex align-items-center">
+                        <div class="nav-toggler">
+                            <span></span><span></span><span></span>
+                        </div> -->
+                        <div class="navbar-btn">
+                            <a href="#">Get A Quote</a>
+                        </div>
+                    <!-- </div> -->
+                </ul>
+            </div>
+          
+        </div>
+    </header>
+    
+   
+    
+
+
+    <!-- <header class="header-four header-full-width sticky-header">
         <div class="header-navigation">
             <div class="container-fluid d-flex align-items-center justify-content-between">
                 <div class="header-left">
@@ -142,7 +294,7 @@
                 <div class="site-nav-menu">
                     <ul class="primary-menu">
                         <li class="current">
-                            <a href="index.html">Home</a>
+                            <a href="index.html">Home</a> -->
                              <!-- <ul class="submenu">
                                 <li><a href="index-2.html">Home 1</a></li>
                                 <li><a href="index-3.html">Home 2</a></li>
@@ -162,33 +314,33 @@
                                     </ul>
                                 </li>
                             </ul> ------->
-                        </li>
+                        <!-- </li>
                         
                         <li>
-                            <a href="#">Services</a>
+                            <a href="services-details.html">Services</a>
                             <ul class="submenu">
-                                <li><a href="social-media-services.html"> <b>☑</b> ✔ Social Media ☛</a>
+                                <li><a href="social-media-services.html">  Social Media ►</a>
                                     <ul class="submenu l">
                                         <li><a href="social-media-management-services.html">Social Media Management</a></li>
                                         <li><a href="social-media-advertising-solutions.html">Social Media Advertising</a></li>
                                         <li><a href="social-media-strategy-development.html">Social Media Strategy Development</a></li>
                                         <li><a href="social-media-analytics-reporting.html">Social Media Analytics and Reporting</a></li>
                                     </ul>
-                                <li><a href="online-lead-generation-consultation.html"> <b>✔</b>Lead Generation ► ►</a>
+                                <li><a href="online-lead-generation-consultation.html"> Lead Generation ►</a>
                                         <ul class="submenu">
                                             <li><a href="lead-magnet-creation-optimization.html">Lead Magnet Creation and Optimization</a></li>
                                             <li><a href="conversion-rate-optimization-lead-generation.html">Conversion Rate Optimization</a></li>
                                             <li><a href="targeted-audience-profiling-lead-generation.html">Targeted Audience Profiling</a></li>
                                             <li><a href="automated-lead-nurturing-campaigns.html">Automated Lead Nurturing Campaigns</a></li>
                                         </ul>
-                                        <li><a href="seo-services-in-pune.html"><b>⦿</b>SEO  ► ►</a>
+                                        <li><a href="seo-services-in-pune.html">SEO ►</a>
                                             <ul class="submenu">
                                                 <li><a href="local-seo-services.html">Local SEO Services</a></li>
                                                 <li><a href="seo-audit-analysis.html">SEO Audit and Analysis</a></li>
                                                 <li><a href="google-map-optimization.html">Google Map Optimization</a></li>
                                             </ul>
                                         </li>                                
-                                        <li><a href="ppc-integration.html">PPC  ► ►</a>
+                                        <li><a href="ppc-integration.html">PPC ►</a>
                                             <ul class="submenu">
                                                 <li><a href="ppc-keyword-research-analysis.html">Keyword Research</a></li>
                                                 <li><a href="ad-campaign-setup-management.html">Ad Campaign Management</a></li>
@@ -196,7 +348,7 @@
                                                 <li><a href="ppc-performance-tracking-reporting.html">Performance Tracking</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="other-omnigross-services.html">Other  ► ►</a>
+                                        <li><a href="other-omnigross-services.html">Other ►</a>
                                             <ul class="submenu">
                                                 <li><a href="whatsapp-marketing-solutions.html">WhatsApp Marketing Services</a></li>
                                                 <li><a href="secure-payment-gateway-solutions.html">Payment Gateway Integration</a></li>
@@ -226,8 +378,8 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">Portfolio</a>
-                            <ul class="submenu">
+                            <a href="#">Portfolio</a> -->
+                            <!-- <ul class="submenu">
                                 <li><a href="case-study.html">case study</a></li>
                                 <li><a href="case-details.html">Case Details</a></li>
                                 <li><a href="coming-soon.html">coming soon</a></li>
@@ -241,8 +393,8 @@
                                 <li><a href="privacy.html">Privacy</a></li>
                                 <li><a href="team.html">team</a></li>
                                 <li><a href="team-details.html">team details</a></li>
-                            </ul>
-                        </li>
+                            </ul> -->
+                        <!-- </li>
                         <li>
                             <a href="contact.html">Contact</a>
                         </li>
@@ -259,7 +411,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
     <!--====== Header Part End ======-->
 
     <!--====== Banner Start ======-->
@@ -371,7 +523,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item-seven mt-30">
+                    <div class="service-item-seven1 mt-30">
                         <div class="icon">
                             <img src="assets/img/icon/services-2.png" alt="Icon">
                         </div>
