@@ -8337,6 +8337,11 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 	.footer-area .footer-widgets .widget .widget-title {
 		font-size: 28px;
 	}
+
+	.nav-widget{
+		align-items: center;
+		margin-left:50px;
+	}
 }
 
 .footer-area .footer-widgets .widget.about-widget {
@@ -10390,12 +10395,19 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 	.blog-dteails-content .post-footer .post-author .image {
 		margin-right: 30px;
 	}
+	.post-author .image{
+		margin-left: 159px;
+	}
 }
 
 @media (max-width: 767px) {
 	.blog-dteails-content .post-footer .post-author .image {
+		/* margin-left: 50px; */
 		margin-right: 0;
 		margin-bottom: 20px;
+	}
+	.post-author .image{
+		margin-left: 50px;
 	}
 }
 
