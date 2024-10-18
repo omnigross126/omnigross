@@ -4288,7 +4288,7 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 		line-height: 60px;
 	}
 	img.main-logo {
-		margin-top: 50px;
+		margin-top: 8px;
 	}
 	.fadeInLeft {
 
@@ -5280,15 +5280,15 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	.faq-counter-boxes-two.row {
-		margin-left: -20px;
-		margin-right: -20px;
+		margin-left: -30px;
+		margin-right: -30px;
 	}
 }
 
 @media (max-width: 767px) {
 	.faq-counter-boxes-two.row {
-		margin-left: -20px;
-		margin-right: -20px;
+		margin-left: -30px;
+		margin-right: -30px;
 	}
 }
 
@@ -9957,14 +9957,14 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 
 @media (max-width: 767px) {
 	.blog-dteails-content {
-		margin: 0px -8px;
+		margin: 0px -23px;
 		padding: 30px;
 	}
 }
 
 @media (max-width: 575px) {
 	.blog-dteails-content {       
-		 margin: 0px -8px;
+		margin: 0px -23px;
 		padding: 30px 25px;
 	}
 }
