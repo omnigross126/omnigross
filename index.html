@@ -214,7 +214,7 @@
        animation: moveUp .3s ease-in-out forwards;
     }
     
-    @keyframes moveUp {
+    /* @keyframes moveUp {
        0% {
            opacity: 0;
            transform: translateX(-50%) translateY(50px);
@@ -223,26 +223,38 @@
            opacity: 1;
            transform: translateX(-50%) translateY(20px); 
        }
-    }
+    } */
     
     .hamburger {
        display: none;
     }
-    
+    .hamburger1 {
+       display: none;
+    }
     .mobile .hamburger {
        display: flex;
        flex-direction: column;
        padding: 20px 0;
        cursor: pointer;
     }
-    
+    .mobile .hamburger1 {
+       display: flex;
+       flex-direction: column;
+       padding: 20px 0;
+       cursor: pointer;
+    }
     .mobile .hamburger span {
        background: var(--pure);
        width: 28px;
        height: 2px;
        margin-bottom: 8px;
     }
-    
+    .mobile .hamburger1 span {
+       background: var(--pure);
+       width: 28px;
+       height: 2px;
+       margin-bottom: 8px;
+    }
     .mobile ul.nav-list {
        background: -webkit-linear-gradient(45deg, #434343, #000000);
        background: linear-gradient(45deg, #434343, #000000);
@@ -262,13 +274,19 @@
     .hamburger, .brand {
        z-index: 9999;
     }
-    
+    .hamburger1, .brand {
+       z-index: 9999;
+    }
     .mobile ul.nav-list.open {
        opacity: 1;
        pointer-events: auto;  
     }
     
     .mobile .hamburger span {
+       transform-origin: left;
+       transition: all .3s ease-in-out;
+    }
+    .mobile .hamburger1 span {
        transform-origin: left;
        transition: all .3s ease-in-out;
     }
@@ -324,10 +342,23 @@
        background-size: cover;
        background-position: center;
     }
+
+    .hamburger-additional-content {
+    margin-top: 14px;
+}
+.hamburger-additional-content1 {
+    margin-top: 14px;
+}
     
     </style>
     
        
+    
+
+
+
+
+
     
     </head>
     
@@ -349,21 +380,43 @@
        <!--====== Header Part Start ======-->
     
        <nav class="navbar">
-           <div class="container nav-wrapper">
-               <div class="brand">
-                   <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"> -->
-                       <!-- <path
-                           d="M10.5 10a2.5 2.5 0 1 1-5.001-.001A2.5 2.5 0 0 1 10.5 10zM16 4v12c0 1.1-.9 2-2 2H2c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2zm-3.5 6a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0zm6.715-4.914L17 6.562v7l2.215 1.477a.505.505 0 0 0 .785-.42V5.506a.505.505 0 0 0-.785-.42z" />
-                   </svg> -->
-                   <span> <img src="assets/img/logo-3.png" alt="Omnivus" class="main-logo">
-                       <!-- <img src="assets/img/logo-2.png" alt="Omnivus" class="sticky-logo"> -->
-                  </span>
-               </div>
-               <div class="hamburger">
-                   <span></span>
-                   <span></span>
-                   <span></span>
-               </div>
+        <div class="container nav-wrapper">
+             <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list">
+                <!-- Existing nav-list content -->
+               
+            </ul>
+            <div class="hamburger-additional-content">
+                <!-- This is where the additional content will be inserted -->
+            </div>
+            
+            <div class="brand">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"> -->
+                    <!-- <path
+                        d="M10.5 10a2.5 2.5 0 1 1-5.001-.001A2.5 2.5 0 0 1 10.5 10zM16 4v12c0 1.1-.9 2-2 2H2c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2zm-3.5 6a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0zm6.715-4.914L17 6.562v7l2.215 1.477a.505.505 0 0 0 .785-.42V5.506a.505.505 0 0 0-.785-.42z" />
+                </svg> -->
+                <span> <img src="assets/img/logo-3.png" alt="Omnivus" class="main-logo">
+                    <!-- <img src="assets/img/logo-2.png" alt="Omnivus" class="sticky-logo"> -->
+               </span>
+            </div>
+            <div class="hamburger1">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-list1">
+                <!-- Existing nav-list content -->
+               
+            </ul>
+            <div class="hamburger-additional-content1">
+                <!-- This is where the additional content will be inserted -->
+            </div>  
+
                <ul class="nav-list">
                    <li class="current"><a href="index.html">Home</a></li>
                    <li><a href="services-details.html">About</a></li>
