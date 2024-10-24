@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     hamburger.addEventListener('click', function() {
         const additionalText = `
-            <h3>Additional Information</h3>
+            <h3>Services Provided By US</h3>
             <ul>
                 <li><a href="social-media-management-services.html">Social Media Management</a></li>
                 <li><a href="social-media-advertising-solutions.html">Social Media Advertising</a></li>
@@ -121,11 +121,11 @@ document.addEventListener('DOMContentLoaded', function() {
             <h3>Menu</h3>
             <ul>
                 <li class="current"><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="social-media-services.html">Social Media</a>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service-details.html">Social Media</a>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         `;
         toggleHamburger(hamburger1, hamburger, additionalContent1, menuText);
