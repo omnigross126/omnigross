@@ -11146,7 +11146,7 @@ body {
 	  color: #0c59db;
 }
 .nav-wrapper {
-  
+	/* margin-left: 40px; */
    display: flex;
    align-items: center;
    justify-content: space-between;

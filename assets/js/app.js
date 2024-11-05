@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <ul>
                 <li class="current"><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="service-details.html">Social Media</a>
+                <li><a href="services.html">Social Media</a>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
