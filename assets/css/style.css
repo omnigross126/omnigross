@@ -3553,7 +3553,7 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 	}
 
 	.service-item-seven1 {
-		margin: 2px 4px;
+		margin: 32px 4px;
         padding: 29px 30px;
 		border-width: 10px;
 	}
@@ -4052,9 +4052,9 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 
 .feature-text-block.with-absolute-image .absolute-img {
 	position: absolute;
-	top: -15px;
-	bottom: -15px;
-	left: -15px;
+	top: 0px;
+    bottom: -1px;
+    left: 1px;
 	width: 465px;
 	background-size: cover;
 	background-position: center;
