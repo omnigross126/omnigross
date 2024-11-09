@@ -64,6 +64,13 @@ document.addEventListener('DOMContentLoaded', function() {
     let additionalContent = document.querySelector('.hamburger-additional-content');
     let additionalContent1 = document.querySelector('.hamburger-additional-content1');
 
+
+    let logo = document.querySelector('.brand img'); // Selecting the image inside the brand class
+    let logoContainer = document.querySelector('.brand'); // The container of the logo
+
+    // Set margin-left for hamburger1
+    hamburger1.style.marginLeft = '40px';
+
     function toggleHamburger(activeHamburger, inactiveHamburger, contentElement, menuContent) {
         activeHamburger.classList.toggle('active');
 
@@ -71,6 +78,28 @@ document.addEventListener('DOMContentLoaded', function() {
             inactiveHamburger.style.display = 'none';
             contentElement.style.display = 'block';
             contentElement.innerHTML = menuContent;
+
+
+
+             // Center the logo
+             logo.style.display = 'block'; // Ensure the logo is displayed
+             logo.style.margin = '0 auto'; // Center the logo
+             logo.parentElement.style.textAlign = 'center'; // Center the parent container of the logo
+            
+             logoContainer.style.display = 'flex'; // Make the parent a flex container
+             logoContainer.style.justifyContent = 'center'; // Center children horizontally
+             logoContainer.style.width = '100%'; // Ensure the width is 100%
+ 
+             // Make hamburger1 fixed
+             hamburger1.style.position = 'fixed';
+             hamburger1.style.top = '10px'; // Adjust as needed
+             hamburger1.style.right = '30px'; // Adjust as needed
+ 
+            // Add CSS styles for h3 tags
+            let h3Tags = contentElement.getElementsByTagName('h3');
+            for (let h3 of h3Tags) {
+                h3.style.marginLeft = '20px'; // Set margin-left for h3
+            }
 
             contentElement.style.opacity = '1';
             contentElement.style.visibility = 'visible';
@@ -86,6 +115,20 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             inactiveHamburger.style.display = 'flex'; // or 'block', depending on your layout
             contentElement.style.display = 'none';
+
+
+
+             // Reset styles when menu is closed
+             logo.style.display = ''; // Reset to default
+             logo.style.margin = ''; // Reset to default
+             logo.style.maxWidth = ''; // Reset to default
+             logoContainer.style.display = ''; // Reset to default
+             logoContainer.style.justifyContent = ''; // Reset to default
+             logoContainer.style.width = ''; // Reset to default
+             hamburger1.style.position = ''; // Reset to default
+             hamburger1.style.top = ''; // Reset to default
+             hamburger1.style.right = ''; // Reset to default
+       
         }
     }
 
@@ -93,6 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const additionalText = `
             <h3>Services Provided By US</h3>
             <ul>
+                 <li><a href="social-media-marketing-services.html">Social Media Marketing</a></li>
                 <li><a href="social-media-management-services.html">Social Media Management</a></li>
                 <li><a href="social-media-advertising-solutions.html">Social Media Advertising</a></li>
                 <li><a href="social-media-strategy-development.html">Social Media Strategy Development</a></li>
@@ -128,7 +172,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         `;
+
+        logo.style.margin = '19px 13px 0px 109px';
+
         toggleHamburger(hamburger1, hamburger, additionalContent1, menuText);
+
+      
+
     });
 
     // Debug logging
