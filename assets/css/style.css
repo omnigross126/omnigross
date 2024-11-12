@@ -11159,7 +11159,7 @@ body {
 }
 
 .brand span img {
-   height: 30px;
+   height: 50px;
    margin-right: 10px;
 }
 
@@ -11179,15 +11179,16 @@ body {
 }
 
 .nav-wrapper ul.nav-list li a {
-   color: var(--pure);
+   color: #002249;
    text-decoration: none;
    letter-spacing: 1px;
    transition: all .5s ease-in-out;
 }
 
 .nav-wrapper ul.nav-list li a:hover, .nav-wrapper ul.nav-list li.active a {
-   color: var(--primary);
+   color: #69a1bb
 }
+
 
 .btn {
    background: var(--primary);
