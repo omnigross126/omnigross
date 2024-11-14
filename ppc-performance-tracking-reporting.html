@@ -46,7 +46,73 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 
+<style>
 
+    .whatsapp {
+           position: fixed;
+           bottom: 95px;
+           right: 20px;
+           z-index: 1;
+           transition: all 0.4s ease-in-out;
+           visibility: visible;
+       }
+       
+       .whatsapp_img {
+           width: 50px;
+           height: 50px;
+           border-radius: 50%;
+           cursor: pointer;
+       }
+       
+       .whatsapp_img:hover {
+           transform: scale(1.1);
+       }
+       
+       @media only screen and (max-width:600px){
+           .whatsapp{
+               width: 13%;
+               height: 7%;
+           }
+       
+           .whatsapp_img{
+               width: 120%;
+               height: 120%;
+           }
+       }
+   
+           .call {
+           position: fixed;
+           bottom: 155px;
+           right: 28px;
+           z-index: 1;
+           transition: all 0.4s ease-in-out;
+           visibility: visible;
+       }
+       
+       .call_img {
+           width: 40px;
+           height: 35px;
+           border-radius: 50%;
+           cursor: pointer;
+       }
+       
+       .call_img:hover {
+           transform: scale(1.1);
+       }
+       
+       @media only screen and (max-width:600px){
+           .call{
+               width: 10%;
+               height: 7%;
+           }
+       
+           .call_img{
+               width: 138%;
+               height:98%;
+           }
+       }
+       
+       </style>
 
 
 </head>
@@ -55,6 +121,17 @@
 
 
 <body class="mobile">
+    <div class="whatsapp">
+        <a href="https://wa.link/68vkov" target="_blank">
+            <img src="assets/img/WhatsApp_icon.png" alt="" height=100% width="70%" class="whatsapp_img">
+        </a>
+    </div>
+    
+    <div class="call">
+        <a href="tel:+919637095999" target="_blank">
+        <img src="assets/img/call.webp" alt="" height=100% width="70%" class="call_img">
+    </a>
+    </div>
    <!--====== Preloader Start ======-->
    <!--<div id="preloader">
        <div class="loader-cubes">

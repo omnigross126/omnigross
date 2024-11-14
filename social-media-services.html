@@ -46,8 +46,73 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 
+<style>
 
-
+    .whatsapp {
+           position: fixed;
+           bottom: 95px;
+           right: 20px;
+           z-index: 1;
+           transition: all 0.4s ease-in-out;
+           visibility: visible;
+       }
+       
+       .whatsapp_img {
+           width: 50px;
+           height: 50px;
+           border-radius: 50%;
+           cursor: pointer;
+       }
+       
+       .whatsapp_img:hover {
+           transform: scale(1.1);
+       }
+       
+       @media only screen and (max-width:600px){
+           .whatsapp{
+               width: 13%;
+               height: 7%;
+           }
+       
+           .whatsapp_img{
+               width: 120%;
+               height: 120%;
+           }
+       }
+   
+           .call {
+           position: fixed;
+           bottom: 155px;
+           right: 28px;
+           z-index: 1;
+           transition: all 0.4s ease-in-out;
+           visibility: visible;
+       }
+       
+       .call_img {
+           width: 40px;
+           height: 35px;
+           border-radius: 50%;
+           cursor: pointer;
+       }
+       
+       .call_img:hover {
+           transform: scale(1.1);
+       }
+       
+       @media only screen and (max-width:600px){
+           .call{
+               width: 10%;
+               height: 7%;
+           }
+       
+           .call_img{
+               width: 138%;
+               height:98%;
+           }
+       }
+       
+       </style>
 
 </head>
 
@@ -55,6 +120,17 @@
 
 
 <body class="mobile">
+    <div class="whatsapp">
+        <a href="https://wa.link/68vkov" target="_blank">
+            <img src="assets/img/WhatsApp_icon.png" alt="" height=100% width="70%" class="whatsapp_img">
+        </a>
+    </div>
+    
+    <div class="call">
+        <a href="tel:+919637095999" target="_blank">
+        <img src="assets/img/call.webp" alt="" height=100% width="70%" class="call_img">
+    </a>
+    </div>
    <!--====== Preloader Start ======-->
    <!--<div id="preloader">
        <div class="loader-cubes">
@@ -198,157 +274,116 @@
                             Social Media Services
                         </h3>
 
-                        <figure class="mt-40 mb-40  firstimg1">
+                        <!-- <figure class="mt-40 mb-40  firstimg1">
                         <img src="assets/img/img1.jpg" alt="Business insurance feature" class="firstimg" />
-                        </figure>
+                        </figure> -->
 
-                        <!-- <ul class="post-meta">
-                            <li><a href="#"><i class="fal fa-eye"></i>100 Views</a></li>
-                            <li><a href="#"><i class="fal fa-comments"></i>30 Comments</a></li>
-                            <li><a href="#"><i class="fal fa-calendar-alt"></i>24th March 2020</a></li>
-                        </ul> -->
-                        <p class="mb-20">
+                       
+                        <!-- <p class="mb-20">
                             Social media is a powerful platform for businesses to connect with their audience, build brand awareness, and drive engagement. By creating and sharing engaging content on platforms like Facebook, Instagram, LinkedIn, and Twitter, businesses can reach new customers, foster loyalty, and promote their products or services effectively.
                               <figure class="mt-40 mb-40">
                             <img src="assets/img/blog/img2.jpg" alt="Image">
-                        </figure>
+                        </figure> -->
                         
-                        <h3 class="subtitle">FAQS</h3>
+                        <!-- <h3 class="subtitle">FAQS</h3> -->
                         <section class="faq-section section-gap">
-    <div class="container">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-lg-12 col-md-12  blog1">
-                <div class="accordion-three accordion-three-two" id="accordionExample">
-                    <div class="card">
-                        <div class="card-header" id="headingOne"> 
-                            <a class="" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                What is social media marketing?
-                            </a> 
-                        </div>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>Social media marketing involves using platforms like Facebook, Instagram, LinkedIn, and Twitter to promote your brand, engage with your audience, and drive business goals.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo"> 
-                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Why is social media important for my business?
-                            </a> 
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>Social media helps businesses build brand awareness, reach new audiences, connect with customers, and drive website traffic or sales through targeted campaigns.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree"> 
-                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Which social media platforms should I focus on?
-                            </a> 
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>The best platforms depend on your audience and goals. For instance, LinkedIn is great for B2B, Instagram for visual content, and Facebook for a broad audience.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingFour"> 
-                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                How often should I post on social media?
-                            </a> 
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>Post frequency varies by platform, but consistency is key. Aim for a few posts per week, depending on your content strategy and audience engagement levels.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingFive"> 
-                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                What types of content work best on social media?
-                            </a> 
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>Engaging visuals, videos, stories, infographics, and user-generated content perform well. Content should align with your audience’s interests and your business goals.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingSix"> 
-                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                How do I measure social media performance?
-                            </a> 
-                        </div>
-                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>Track metrics like engagement rate, reach, impressions, follower growth, click-through rate, and conversions using analytics tools like Facebook Insights or Hootsuite.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingSeven"> 
-                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                Should I use paid advertising on social media?
-                            </a> 
-                        </div>
-                        <div id=" collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>Yes, paid ads help you reach a targeted audience, boost visibility, and achieve specific goals like website traffic, lead generation, or sales.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingEight"> 
-                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                What is the role of influencers in social media marketing?
-                            </a> 
-                        </div>
-                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>Influencers can amplify your brand’s reach and credibility by promoting your products to their engaged followers. Collaborating with the right influencers can enhance trust and conversions.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingNine"> 
-                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                How can social media improve customer relationships?
-                            </a> 
-                        </div>
-                        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>Social media allows real-time communication with customers, enabling you to respond to inquiries, address complaints, and build stronger connections through personalized interactions.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTen"> 
-                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                                Do I need a social media strategy for my business?
-                            </a> 
-                        </div>
-                        <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>Absolutely! A well-defined strategy ensures your efforts are goal-oriented, consistent, and aligned with your brand, helping you maximize results on each platform.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                            <section class="history-section section-gap">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-6">
+                                            <div class="section-title text-center mb-80">
+                                                <h2 class="title mb-10">Our History</h2>
+                                                <p class="text-color-2">
+                                                    Does any industry face a more complex audience journey and marketing sales process than B2B
+                                                    technology.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="history-timeline history-isotope">
+                                        <div class="history-item wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="history-thumb" style="background-image: url(assets/img/Canva\ Img/1.jpg);"></div>
+                                            <!-- <div class="history-content">
+                                                <span class="history-year">1990 - Startup</span>
+                                                <h4 class="title">Technical content may have per suasive objectives.</h4>
+                                            </div> -->
+                                              <div class="number-box">
+                                                <span>01</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="history-item wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="history-content">
+                                                <span class="history-year">Social Media Marketing</span>
+                                                <h4 class="title"> Social Media Marketing (SMM) is the process of promoting a brand or business on social media platforms to increase brand awareness, engage with followers, and drive traffic to a website or landing page. 
+                                            </div>
+                                        </div>
+
+                                        <div class="history-item wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="history-content">
+                                                <span class="history-year">1990 - Startup</span>
+                                                <h4 class="title">Technical content may have per suasive objectives.</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="history-item wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="history-thumb" style="background-image: url(assets/img/history-2.jpg);"></div>
+                                            <!-- <div class="history-content">
+                                                <span class="history-year">1990 - Startup</span>
+                                                <h4 class="title">Technical content may have per suasive objectives.</h4>
+                                            </div>  -->
+                                           
+                                          <div class="number-box">
+                                                <span>02</span>
+                                            </div>
+                                        </div>
+
+                                        
+
+                                        <div class="history-item wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="history-thumb" style="background-image: url(assets/img/history-3.jpg);"></div>
+                                            <!-- <div class="history-content">
+                                                <span class="history-year">1990 - Startup</span>
+                                                <h4 class="title">Technical content may have per suasive objectives.</h4>
+                                            </div> -->
+                                            <div class="number-box">
+                                                <span>03</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="history-item wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="history-content">
+                                                <span class="history-year">1990 - Startup</span>
+                                                <h4 class="title">Technical content may have per suasive objectives.</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="history-item wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="history-content">
+                                                <span class="history-year">1990 - Startup</span>
+                                                <h4 class="title">Technical content may have per suasive objectives.</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="history-item wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="history-thumb" style="background-image: url(assets/img/history-4.jpg);"></div>
+                                            <!-- <div class="history-content">
+                                                <span class="history-year">1990 - Startup</span>
+                                                <h4 class="title">Technical content may have per suasive objectives.</h4>
+                                            </div> -->
+                                            <div class="number-box">
+                                                <span>04</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
 </section>
 
                        
-                        <div class="divider"></div>
-                        <h3 class="subtitle">Essential Features of Social Media Services: </h3>
-                        <ul class="post-content-list">
+                        <!-- <div class="divider"></div>
+                        <h3 class="subtitle">Essential Features of Social Media: </h3> -->
+                        <!-- <ul class="post-content-list">
                             <li><i class="fal fa-check"></i>Identifies your target audience and chooses platforms that align with their preferences.</li>
                             <li><i class="fal fa-check"></i>Develops a clear content strategy with a mix of educational, entertaining, and promotional posts.</li>
                             <li><i class="fal fa-check"></i>Creates engaging visuals and videos to capture attention and drive interaction.</li>
@@ -359,7 +394,7 @@
                             <li><i class="fal fa-check"></i>Collaborates with influencers or partners to expand reach and build trust.</li>
                             <li><i class="fal fa-check"></i>Monitors performance metrics like engagement, reach, and conversions to refine strategies.</li>
                             <li><i class="fal fa-check"></i>Continuously updates your approach based on analytics and platform trends to stay relevant.</li>
-                        </ul>
+                        </ul> -->
 
                         <blockquote class="mt-40 mb-40">
                             <cite>by Hetmayar</cite>

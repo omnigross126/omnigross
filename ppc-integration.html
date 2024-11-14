@@ -27,6 +27,11 @@
     <!--====== Main Css ======-->
     <link rel="stylesheet" href="assets/css/style.css" />
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+   
 
     <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -41,11 +46,73 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+<style>
 
+    .whatsapp {
+           position: fixed;
+           bottom: 95px;
+           right: 20px;
+           z-index: 1;
+           transition: all 0.4s ease-in-out;
+           visibility: visible;
+       }
+       
+       .whatsapp_img {
+           width: 50px;
+           height: 50px;
+           border-radius: 50%;
+           cursor: pointer;
+       }
+       
+       .whatsapp_img:hover {
+           transform: scale(1.1);
+       }
+       
+       @media only screen and (max-width:600px){
+           .whatsapp{
+               width: 13%;
+               height: 7%;
+           }
+       
+           .whatsapp_img{
+               width: 120%;
+               height: 120%;
+           }
+       }
+   
+           .call {
+           position: fixed;
+           bottom: 155px;
+           right: 28px;
+           z-index: 1;
+           transition: all 0.4s ease-in-out;
+           visibility: visible;
+       }
+       
+       .call_img {
+           width: 40px;
+           height: 35px;
+           border-radius: 50%;
+           cursor: pointer;
+       }
+       
+       .call_img:hover {
+           transform: scale(1.1);
+       }
+       
+       @media only screen and (max-width:600px){
+           .call{
+               width: 10%;
+               height: 7%;
+           }
+       
+           .call_img{
+               width: 138%;
+               height:98%;
+           }
+       }
+       
+       </style>
 
 
 
@@ -55,6 +122,17 @@
 
 
 <body class="mobile">
+    <div class="whatsapp">
+        <a href="https://wa.link/68vkov" target="_blank">
+            <img src="assets/img/WhatsApp_icon.png" alt="" height=100% width="70%" class="whatsapp_img">
+        </a>
+    </div>
+    
+    <div class="call">
+        <a href="tel:+919637095999" target="_blank">
+        <img src="assets/img/call.webp" alt="" height=100% width="70%" class="call_img">
+    </a>
+    </div>
    <!--====== Preloader Start ======-->
    <!--<div id="preloader">
        <div class="loader-cubes">
@@ -178,7 +256,7 @@
     <!--====== Page Title start ======-->
     <section class="page-title-area">
         <div class="container">
-            <h2 class="title">PPC </h2>
+            <h2 class="title">PPC</h2>
             <ul class="breadcrumb-nav">
                 <li><a href="index.html">Services</a></li>
                 <!-- <li class="active">Social Media</li> -->
@@ -195,171 +273,134 @@
                     <div class="blog-dteails-content">
                         <a href="#" class="cat">Business</a>
                         <h3 class="title">
-                            PPC (Pay-Per-Click) 
+                           PPC
                         </h3>
 
-                        <figure class="mt-40 mb-40  firstimg1">
+                        <!-- <figure class="mt-40 mb-40  firstimg1">
                         <img src="assets/img/img1.jpg" alt="Business insurance feature" class="firstimg" />
-                        </figure>
+                        </figure> -->
 
                         <!-- <ul class="post-meta">
                             <li><a href="#"><i class="fal fa-eye"></i>100 Views</a></li>
                             <li><a href="#"><i class="fal fa-comments"></i>30 Comments</a></li>
                             <li><a href="#"><i class="fal fa-calendar-alt"></i>24th March 2020</a></li>
                         </ul> -->
-                        <p class="mb-20">
-                            Pay-Per-Click (PPC) advertising is a digital marketing strategy where businesses pay a fee each time someone clicks on their ad. PPC ads appear on search engines, social media platforms, and websites, targeting specific keywords or audiences. This method helps drive traffic, generate leads, and boost sales quickly and effectively.
-                              <figure class="mt-40 mb-40">
+                        <!-- <p class="mb-20">
+                            Lead generation is the process of attracting and converting potential customers into individuals who have expressed interest in your products or services. It involves using various strategies and tools, such as digital marketing, email campaigns, and social media, to capture leads and nurture them through the sales funnel. Effective lead generation helps businesses grow their customer base, increase sales, and achieve sustained growth.
+                             <figure class="mt-40 mb-40">
                             <img src="assets/img/blog/img2.jpg" alt="Image">
-                        </figure>
+                        </figure> -->
                         
-                        <h3 class="subtitle">FAQS</h3>
+                        <!-- <h3 class="subtitle">FAQS</h3> -->
                         <section class="faq-section section-gap">
-    <div class="container">
-        <div class="row align-items-center justify-content-center">
-            <div class="col-lg-12 col-md-12  blog1">
-                <div class="accordion-three accordion-three-two" id="accordionExample">
-                    <div class="card">
-                        <div class="card-header" id="headingOne"> 
-                            <a class="" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                What is PPC advertising?
-                            </a> 
-                        </div>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>PPC is an online advertising model where you pay only when someone clicks on your ad, commonly used on platforms like Google Ads and Facebook Ads.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTwo"> 
-                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Why is PPC important for my business?
-                            </a> 
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>PPC drives immediate traffic, increases visibility, and helps generate leads or sales while allowing precise targeting and measurable results.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingThree"> 
-                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                What platforms can I use for PPC?
-                            </a> 
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>Popular PPC platforms include Google Ads, Bing Ads, Facebook Ads, LinkedIn Ads, Instagram Ads, and YouTube Ads.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingFour"> 
-                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                How do I choose keywords for PPC campaigns?
-                            </a> 
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>Use tools like Google Keyword Planner or SEMrush to find relevant keywords with high search volume and manageable competition.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingFive"> 
-                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                What is a quality score in PPC?
-                            </a> 
-                        </div>
-                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>Quality Score is a metric used by platforms like Google Ads to measure the relevance and quality of your keywords, ads, and landing pages. Higher scores lower your cost-per-click (CPC).</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingSix"> 
-                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                How do I set a budget for PPC campaigns?
-                            </a> 
-                        </div>
-                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>Determine your goals, calculate the cost-per-click for your target keywords, and allocate a daily or monthly budget that aligns with your ROI expectations.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingSeven"> 
-                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                What is the difference between PPC and SEO?
-                            </a> 
-                        </div>
-                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>PPC delivers immediate results through paid ads, while SEO is a long-term strategy focused on improving organic rankings. Both work well together for overall success.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingEight"> 
-                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                Can PPC work for small businesses?
-                            </a> 
-                        </div>
-                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>Yes, PPC is highly effective for small businesses as it allows precise targeting, flexible budgets, and measurable ROI, making it accessible and impactful.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingNine"> 
-                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                How do I measure PPC performance?
-                            </a> 
-                        </div>
-                        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>Track metrics like click-through rate (CTR), cost-per-click (CPC), conversion rate, return on ad spend (ROAS), and quality score using analytics tools.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" id="headingTen"> 
-                            <a class="collapsed" href="#" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                                What is retargeting in PPC?
-                            </a> 
-                        </div>
-                        <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
-                            <div class="card-body">
-                                <p>Retargeting shows ads to users who have previously interacted with your website or content, helping re-engage potential customers and improve conversions.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                            <section class="history-section section-gap">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-6">
+                                            <div class="section-title text-center mb-80">
+                                                <h2 class="title mb-10">Our History</h2>
+                                                <p class="text-color-2">
+                                                    Does any industry face a more complex audience journey and marketing sales process than B2B
+                                                    technology.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="history-timeline history-isotope">
+                                        <div class="history-item wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="history-thumb" style="background-image: url(assets/img/history-1.jpg);"></div>
+                                            <!-- <div class="history-content">
+                                                <span class="history-year">1990 - Startup</span>
+                                                <h4 class="title">Technical content may have per suasive objectives.</h4>
+                                            </div> -->
+                                              <div class="number-box">
+                                                <span>01</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="history-item wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="history-content">
+                                                <span class="history-year">1990 - Startup</span>
+                                                <h4 class="title">Technical content may have per suasive objectives.</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="history-item wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="history-content">
+                                                <span class="history-year">1990 - Startup</span>
+                                                <h4 class="title">Technical content may have per suasive objectives.</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="history-item wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="history-thumb" style="background-image: url(assets/img/history-2.jpg);"></div>
+                                            <!-- <div class="history-content">
+                                                <span class="history-year">1990 - Startup</span>
+                                                <h4 class="title">Technical content may have per suasive objectives.</h4>
+                                            </div>  -->
+                                           
+                                          <div class="number-box">
+                                                <span>02</span>
+                                            </div>
+                                        </div>
+
+                                        
+
+                                        <div class="history-item wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="history-thumb" style="background-image: url(assets/img/history-3.jpg);"></div>
+                                            <!-- <div class="history-content">
+                                                <span class="history-year">1990 - Startup</span>
+                                                <h4 class="title">Technical content may have per suasive objectives.</h4>
+                                            </div> -->
+                                            <div class="number-box">
+                                                <span>03</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="history-item wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="history-content">
+                                                <span class="history-year">1990 - Startup</span>
+                                                <h4 class="title">Technical content may have per suasive objectives.</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="history-item wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="history-content">
+                                                <span class="history-year">1990 - Startup</span>
+                                                <h4 class="title">Technical content may have per suasive objectives.</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="history-item wow fadeInUp" data-wow-delay="0.3s">
+                                            <div class="history-thumb" style="background-image: url(assets/img/history-4.jpg);"></div>
+                                            <!-- <div class="history-content">
+                                                <span class="history-year">1990 - Startup</span>
+                                                <h4 class="title">Technical content may have per suasive objectives.</h4>
+                                            </div> -->
+                                            <div class="number-box">
+                                                <span>04</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
 </section>
 
                        
-                        <div class="divider"></div>
-                        <h3 class="subtitle">Essential Features of PPC: </h3>
+                        <!-- <div class="divider"></div>
+                        <h3 class="subtitle">Essential Features of Lead Generation: </h3>
                         <ul class="post-content-list">
-                            <li><i class="fal fa-check"></i>Defines campaign goals, such as brand awareness, lead generation, or sales.</li>
-                            <li><i class="fal fa-check"></i>Conducts keyword research to target the right audience with relevant search terms.</li>
-                            <li><i class="fal fa-check"></i>Creates compelling ad copy with clear calls-to-action (CTAs) to attract clicks.</li>
-                            <li><i class="fal fa-check"></i>Designs optimized landing pages that align with the ad’s intent to drive conversions.</li>
-                            <li><i class="fal fa-check"></i>Sets budgets and bids strategically to maximize ROI while controlling costs.</li>
-                            <li><i class="fal fa-check"></i>Leverages audience targeting options like demographics, interests, and locations.</li>
-                            <li><i class="fal fa-check"></i>Utilizes ad extensions (e.g., call buttons, site links) to enhance ad visibility and engagement.</li>
-                            <li><i class="fal fa-check"></i>Monitors campaign performance regularly using tools like Google Ads Manager or Facebook Ads Manager.</li>
-                            <li><i class="fal fa-check"></i>Conducts A/B testing for ad creatives, copy, and targeting to improve results.</li>
-                            <li><i class="fal fa-check"></i>Continuously refines strategies based on performance data and campaign insights.</li>
-                        </ul>
+                            <li><i class="fal fa-check"></i>Defines your target audience and ideal customer profile to attract the right leads.</li>
+                            <li><i class="fal fa-check"></i>Creates compelling lead magnets, such as eBooks, webinars, or free trials, to capture interest.</li>
+                            <li><i class="fal fa-check"></i>Builds optimized landing pages with clear calls to action (CTAs) to encourage conversions.</li>
+                            <li><i class="fal fa-check"></i>Uses SEO and content marketing to attract organic traffic and generate leads.</li>
+                            <li><i class="fal fa-check"></i>Leverages paid advertising platforms like Google Ads and Facebook Ads to reach targeted audiences.</li>
+                            <li><i class="fal fa-check"></i>Implements email marketing campaigns to nurture captured leads and maintain engagement.</li>
+                            <li><i class="fal fa-check"></i>Utilizes social media to connect with potential customers and generate leads through posts, ads, and promotions.</li>
+                            <li><i class="fal fa-check"></i>Integrates CRM tools to manage, track, and score leads based on engagement and potential.</li>
+                            <li><i class="fal fa-check"></i>Conducts A/B testing to optimize lead generation strategies for better results.</li>
+                            <li><i class="fal fa-check"></i>Monitors performance metrics, such as conversion rates and cost per lead, to refine and improve strategies continuously.</li>
+                        </ul> -->
 
                         <blockquote class="mt-40 mb-40">
                             <cite>by Hetmayar</cite>
