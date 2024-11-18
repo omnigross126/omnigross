@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
              // Reset styles when menu is closed
              logo.style.display = ''; // Reset to default
-             logo.style.margin = ''; // Reset to default
+             logo.style.marginTop = '5px'; // Reset to default
              logo.style.maxWidth = ''; // Reset to default
              logoContainer.style.display = ''; // Reset to default
              logoContainer.style.justifyContent = ''; // Reset to default
@@ -166,15 +166,18 @@ document.addEventListener('DOMContentLoaded', function() {
             <ul>
                 <li class="current"><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Social Media</a>
+                <li><a href="service.html">Service</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         `;
 
-        logo.style.margin = '19px 13px 0px 109px';
-
+        logo.style.margin = '19px 3px 0px 109px';
+        logo.style.display = 'block'; // Ensure the logo is displayed
+        logo.style.margin = '0 auto'; // Center the logo
+        logo.parentElement.style.textAlign = 'center'; // Center the parent container of the logo
+       
         toggleHamburger(hamburger1, hamburger, additionalContent1, menuText);
 
       
