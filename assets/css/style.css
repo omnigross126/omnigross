@@ -70,6 +70,12 @@ img {
 	transition: all 0.3s ease-out 0s;
 }
 
+#img1 {
+	max-width: 72%;
+	-webkit-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
 
 
 a:focus,
@@ -6334,14 +6340,14 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 	
 }
 .justify-content-center {
-    margin-right: -180px;
-    margin-left: -182px;
+    margin-right: -22px;
+    margin-left: -22px;
     -ms-flex-pack: center !important;
     justify-content: center !important;
 }
 .justify-content-center {
-	margin-right: -180px;
-    margin-left: -182px;
+	margin-right: -22px;
+    margin-left: -22px;
 }
 .latest-news-box {
 	-webkit-box-shadow: 0px 16px 32px rgba(228, 228, 228, 0.56);
