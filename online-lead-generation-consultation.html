@@ -10,6 +10,10 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
+        <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
     <!--====== Title ======-->
     <title> Omnivus - IT Solutions & Digital Services HTML5 Template || Blog Details </title>
     <!--====== Favicon Icon ======-->
@@ -45,220 +49,355 @@
 <!-- Bootstrap JS -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
+  
 <style>
-
     .whatsapp {
-           position: fixed;
-           bottom: 95px;
-           right: 20px;
-           z-index: 1;
-           transition: all 0.4s ease-in-out;
-           visibility: visible;
-       }
-       
-       .whatsapp_img {
-           width: 50px;
-           height: 50px;
-           border-radius: 50%;
-           cursor: pointer;
-       }
-       
-       .whatsapp_img:hover {
-           transform: scale(1.1);
-       }
-       
-       @media only screen and (max-width:600px){
-           .whatsapp{
-               width: 13%;
-               height: 7%;
-           }
-       
-           .whatsapp_img{
-               width: 120%;
-               height: 120%;
-           }
+       position: fixed;
+       bottom: 60px;
+       right: 20px;
+       z-index: 9999;
+       transition: all 0.4s ease-in-out;
+       visibility: visible;
+   }
+   
+   .whatsapp_img {
+       width: 50px;
+       height: 50px;
+       border-radius: 50%;
+       cursor: pointer;
+   }
+   
+   .whatsapp_img:hover {
+       transform: scale(1.1);
+   }
+   
+   @media only screen and (max-width:600px){
+       .whatsapp{
+           width: 13%;
+           height: 7%;
        }
    
-           .call {
-           position: fixed;
-           bottom: 155px;
-           right: 28px;
-           z-index: 1;
-           transition: all 0.4s ease-in-out;
-           visibility: visible;
+       .whatsapp_img{
+           width: 120%;
+           height: 120%;
        }
-       
-       .call_img {
-           width: 40px;
-           height: 35px;
-           border-radius: 50%;
-           cursor: pointer;
-       }
-       
-       .call_img:hover {
-           transform: scale(1.1);
-       }
-       
-       @media only screen and (max-width:600px){
-           .call{
-               width: 10%;
-               height: 7%;
-           }
-       
-           .call_img{
-               width: 138%;
-               height:98%;
-           }
-       }
-       
-       
-       @media (max-width: 600px) {
-            .row {
-                flex-direction: column;
-            }
-            .row:nth-child(even) {
-                flex-direction: column-reverse;
-            }
-            .block, .number {
-                margin: 10px 0;
-            }
-        }
-        
-       </style>
+   }
 
+   .call {
+   position: fixed;
+   bottom: 126px;
+   right: 28px;
+   z-index: 9999;
+   transition: all 0.4s ease-in-out;
+   visibility: visible;
+}
 
+.call_img {
+   width: 40px;
+   height: 35px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.call_img:hover {
+   transform: scale(1.1);
+}
+
+@media only screen and (max-width:600px){
+   .call{
+       width: 10%;
+       height: 7%;
+   }
+
+   .call_img{
+       width: 138%;
+       height:98%;
+   }
+}
+
+</style>
+
+<style>
+/* Custom styles for responsiveness and visual improvements */
+:root {
+   --primary-color: #007bff;
+   --secondary-color: #6c757d;
+   --background-color: #ffffff;
+   --text-color: #333333;
+}
+body {
+   background-color: var(--background-color);
+   color: var(--text-color);
+   transition: background-color 0.3s, color 0.3s;
+}
+.navbar {
+   padding: 0.5rem 1rem;
+}
+.navbar-brand {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.navbar > .container-fluid {
+   justify-content: space-between;
+   margin-top: 114px;
+}
+.section {
+   margin-bottom: 2rem;
+   padding-bottom: 2rem;
+   border-bottom: 1px solid #e9ecef;
+}
+.footer {
+   background-color: #f8f9fa;
+   padding: 1rem 0;
+   margin-top: 2rem;
+}
+.scroll-to-top {
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   display: none;
+   z-index: 1000;
+}
+.dark-mode-toggle {
+   cursor: pointer;
+}
+body.dark-mode {
+   --background-color: #333333;
+   --text-color: #ffffff;
+}
+@media (max-width: 991.98px) {
+   .navbar-toggler {
+       z-index: 1031;
+   }
+   .navbar-brand {
+       z-index: 1030;
+       height: 50px;
+   }
+   .main-logo {
+   display: none;
+}
+
+}
+.offcanvas-start {
+   width: 250px;
+}
+.offcanvas-end {
+   width: 250px;
+}
+</style>
+<style>
+.banner-section-three {
+background-image: url(assets/img/banner/banner-03.jpg);
+background-size: cover;
+background-position: center;
+margin-top: -88px;
+}
+.navbar {
+margin-top: -98px;
+display: flex;
+background-color: #333;
+border-bottom: none;
+box-shadow: none;
+}
+.navbar-nav{
+color: black;
+}
+.dropdown-menu{
+margin-left: 20px;
+}
+.nav-list li {
+color: darkblue;
+}
+</style>
 
 </head>
 
-
-
-
 <body class="mobile">
-    <div class="whatsapp">
-        <a href="https://wa.link/68vkov" target="_blank">
-            <img src="assets/img/WhatsApp_icon.png" alt="" height=100% width="70%" class="whatsapp_img">
-        </a>
-    </div>
-    
-    <div class="call">
-        <a href="tel:+919637095999" target="_blank">
-        <img src="assets/img/call.webp" alt="" height=100% width="70%" class="call_img">
+<!-- <div class="scroll-up">
+    <svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+</div> -->
+
+<div class="whatsapp">
+    <a href="https://wa.link/68vkov" target="_blank">
+        <img src="assets/img/WhatsApp_icon.png" alt="" height=100% width="70%" class="whatsapp_img">
     </a>
-    </div>
-   <!--====== Preloader Start ======-->
-   <!--<div id="preloader">
-       <div class="loader-cubes">
-           <div class="loader-cube1 loader-cube"></div>
-           <div class="loader-cube2 loader-cube"></div>
-           <div class="loader-cube4 loader-cube"></div>
-           <div class="loader-cube3 loader-cube"></div>
-       </div>
-   </div>-->
-   <!--====== Preloader End ======-->
+</div>
 
-   <!--====== Header Part Start ======-->
+<div class="call">
+    <a href="tel:+919637095999" target="_blank">
+    <img src="assets/img/call.webp" alt="" height=100% width="70%" class="call_img">
+</a>
+</div>
 
-   <nav class="navbar">
-    <div  class="header-two header-full-width sticky-header" class="header-navigation">
-       <div class="container nav-wrapper">
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <ul class="nav-list">
-            <!-- Existing nav-list content -->
-           
-        </ul>
-        <div class="hamburger-additional-content">
-            <!-- This is where the additional content will be inserted -->
-        </div>
 
-           <div class="brand">
-               <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"> -->
-                   <!-- <path
-                       d="M10.5 10a2.5 2.5 0 1 1-5.001-.001A2.5 2.5 0 0 1 10.5 10zM16 4v12c0 1.1-.9 2-2 2H2c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2zm-3.5 6a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0zm6.715-4.914L17 6.562v7l2.215 1.477a.505.505 0 0 0 .785-.42V5.506a.505.505 0 0 0-.785-.42z" />
-               </svg> -->
-               <span> <img src="assets/img/withoutbg.png" alt="Omnivus" class="main-logo">
-                   <!-- <img src="assets/img/logo-2.png" alt="Omnivus" class="sticky-logo"> -->
-              </span>
-           </div>
-           <div class="hamburger1">
-               <span></span>
-               <span></span>
-               <span></span>
-           </div>
-           <ul class="nav-list1">
-              <!-- Existing nav-list content -->
-        </ul>
-        <div class="hamburger-additional-content1">
-            <!-- This is where the additional content will be inserted -->
-        </div> 
+<!--====== Preloader Start ======-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand mx-auto" href="#">
+        <img src="assets/img/withoutbg.png" alt="Logo" height="50" class="d-inline-block align-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+</nav>
 
-        <ul class="nav-list">
-               <li class="current"><a href="index.html">Home</a></li>
-               <li><a href="about.html">About</a></li>
-               <li>
-                   <a href="#">Services</a>
-                   <ul class="dropdown1-list">
-                    <li><a href="social-media-services.html">Social Media</a>
-                        <ul class="dropdown-list">
-                         <li><a href="social-media-marketing-services.html">Social Media Marketing</a></li>
-                         <li><a href="social-media-management-services.html">Social Media Management</a></li>
-                         <li><a href="social-media-advertising-solutions.html">Social Media Advertising</a></li>
-                         <li><a href="social-media-strategy-development.html">Social Media Strategy Development</a></li>
-                         <li><a href="social-media-analytics-reporting.html">Social Media Analytics and Reporting</a></li>
-                    </ul>
-                    </li>
-                    <li><a href="online-lead-generation-consultation.html">Lead Generation</a>
-                        <ul class="dropdown-list">
-                         <li><a href="lead-magnet-creation-optimization.html">Lead Magnet Creation and Optimization</a></li>
-                         <li><a href="conversion-rate-optimization-lead-generation.html">Conversion Rate Optimization</a></li>
-                         <li><a href="targeted-audience-profiling-lead-generation.html">Targeted Audience Profiling</a></li>
-                         <li><a href="automated-lead-nurturing-campaigns.html">Automated Lead Nurturing Campaigns</a></li>
-                       </ul>
-                    </li>
-                    <li><a href="seo-services-in-pune.html">SEO</a>
-                        <ul class="dropdown-list" style="margin-left: -40px;">
-                         <li><a href="local-seo-services.html">Local SEO Services</a></li>
-                         <li><a href="seo-audit-analysis.html">SEO Audit and Analysis</a></li>
-                         <li><a href="google-map-optimization.html">Google Map Optimization</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="ppc-integration.html">PPC</a>
-                        <ul class="dropdown-list" style="margin-left: -40px;">
-                         <li><a href="ppc-keyword-research-analysis.html">Keyword Research</a></li>
-                         <li><a href="ad-campaign-setup-management.html">Ad Campaign Management</a></li>
-                         <li><a href="landing-page-optimization-ppc.html">Landing Page Optimization</a></li>
-                         <li><a href="ppc-performance-tracking-reporting.html">Performance Tracking</a></li>
-                   </ul>
-                    </li>
-                    <li><a href="other-omnigross-services.html">Other </a>
-                        <ul class="dropdown-list" style="margin-left: -40px;">
-                         <li><a href="whatsapp-marketing-solutions.html">WhatsApp Marketing Services</a></li>
-                         <li><a href="secure-payment-gateway-solutions.html">Payment Gateway Integration</a></li>
-                         <li><a href="professional-email-marketing.html">Email Marketing Solution</a></li>
-                         <li><a href="creative-graphics-design-services.html">Graphics Design Solution</a></li>
-                         <li><a href="website-designing-services.html">Website Designing Services</a></li>
-                         <li><a href="reliable-web-hosting-services.html">Web Hosting Solution</a></li>
-                         <li><a href="enterprise-resource-planning-solutions.html">ERP Solution</a></li>
-                         </ul>
-                    </li>
+<!-- Left Offcanvas (Services) -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+<div class="offcanvas-header"style="background-color: #e4eef8;">
+    <h5 class="offcanvas-title" id="offcanvasLeftLabel">Services</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body" style="background-color: #e4eef8;">
+    <ul class="navbar-nav">
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <ul class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="service2Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #e4eef8;">
+                Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="service2Dropdown" style="background-color: #e4eef8; padding: .5rem 2rem;" >
+                  
+                     <li><a href="social-media-services.html">Social Media</a></li>
+                    <li><a href="online-lead-generation-consultation.html">Lead Generation</a></li>
+                    <li><a href="seo-services-in-pune.html">SEO</a></li>
+                    <li><a href="ppc-integration.html">PPC</a></li>
+                    <li><a href="other-omnigross-services.html">Other </a></li>
+                  
                 </ul>
-               </li>
-               <li><a href="#">Blog</a></li>
-               <li><a href="#">Portfolio</a></li>
-               <li><a href="contact.html">Contact</a></li>
-               <li>
-                   <button class="btn">Get A Quote</button>
-               </li>
-           </ul>
-       </div>
-   </nav>
+        </li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button class="btn">Get A Quote</button></li>
+    </ul>
+</div>
+</div>
+
+<!-- Right Offcanvas (Main Navigation) -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+<div class="offcanvas-header" style="background-color: #e4eef8;">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body" style="background-color: #e4eef8;">
+    <ul class="navbar-nav">
+        <li><a href="social-media-marketing-services.html">Social Media Marketing</a></li>
+        <li><a href="social-media-management-services.html">Social Media Management</a></li>
+        <li><a href="social-media-advertising-solutions.html">Social Media Advertising</a></li>
+        <li><a href="social-media-strategy-development.html">Social Media Strategy Development</a></li>
+        <li><a href="social-media-analytics-reporting.html">Social Media Analytics and Reporting</a></li>
+        <li><a href="lead-magnet-creation-optimization.html">Lead Magnet Creation and Optimization</a></li>
+        <li><a href="conversion-rate-optimization-lead-generation.html">Conversion Rate Optimization</a></li>
+        <li><a href="targeted-audience-profiling-lead-generation.html">Targeted Audience Profiling</a></li>
+        <li><a href="automated-lead-nurturing-campaigns.html">Automated Lead Nurturing Campaigns</a></li>
+        <li><a href="local-seo-services.html">Local SEO Services</a></li>
+        <li><a href="seo-audit-analysis.html">SEO Audit and Analysis</a></li>
+        <li><a href="google-map-optimization.html">Google Map Optimization</a></li>
+        <li><a href="ppc-keyword-research-analysis.html">Keyword Research</a></li>
+        <li><a href="ad-campaign-setup-management.html">Ad Campaign Management</a></li>
+        <li><a href="landing-page-optimization-ppc.html">Landing Page Optimization</a></li>
+        <li><a href="ppc-performance-tracking-reporting.html">Performance Tracking</a></li>
+        <li><a href="whatsapp-marketing-solutions.html">WhatsApp Marketing Services</a></li>
+        <li><a href="secure-payment-gateway-solutions.html">Payment Gateway Integration</a></li>
+        <li><a href="professional-email-marketing.html">Email Marketing Solution</a></li>
+        <li><a href="creative-graphics-design-services.html">Graphics Design Solution</a></li>
+        <li><a href="website-designing-services.html">Website Designing Services</a></li>
+        <li><a href="reliable-web-hosting-services.html">Web Hosting Solution</a></li>
+        <li><a href="enterprise-resource-planning-solutions.html">ERP Solution</a></li>
+       
+    </ul>
+</div>
+</div>
+<!--====== Preloader End ======-->
+
+<!--====== Header Part Start ======-->
+
+<nav class="navbar">
+<div  class="header-two header-full-width sticky-header" class="header-navigation">
+   <div class="container nav-wrapper">
 
 
-  
+    <div class="brand">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"> -->
+            <!-- <path
+                d="M10.5 10a2.5 2.5 0 1 1-5.001-.001A2.5 2.5 0 0 1 10.5 10zM16 4v12c0 1.1-.9 2-2 2H2c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2zm-3.5 6a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0zm6.715-4.914L17 6.562v7l2.215 1.477a.505.505 0 0 0 .785-.42V5.506a.505.505 0 0 0-.785-.42z" />
+        </svg> -->
+        <span> <img src="assets/img/withoutbg.png" alt="Omnivus" class="main-logo">
+            <!-- <img src="assets/img/logo-2.png" alt="Omnivus" class="sticky-logo"> -->
+       </span>
+    </div>
+   
+    
+   
+   
+
+    <ul class="nav-list">
+           <li class="current"><a href="index.html">Home</a></li>
+           <li><a href="about.html">     About</a></li></span>
+           <li>
+               <a href="#">     Services</a></span>
+               <ul class="dropdown1-list">
+                   <li><a href="social-media-services.html">Social Media</a>
+                       <ul class="dropdown-list">
+                        <li><a href="social-media-marketing-services.html">Social Media Marketing</a></li>
+                        <li><a href="social-media-management-services.html">Social Media Management</a></li>
+                        <li><a href="social-media-advertising-solutions.html">Social Media Advertising</a></li>
+                        <li><a href="social-media-strategy-development.html">Social Media Strategy Development</a></li>
+                        <li><a href="social-media-analytics-reporting.html">Social Media Analytics and Reporting</a></li>
+                   </ul>
+                   </li>
+                   <li><a href="online-lead-generation-consultation.html">Lead Generation</a>
+                       <ul class="dropdown-list">
+                        <li><a href="lead-magnet-creation-optimization.html">Lead Magnet Creation and Optimization</a></li>
+                        <li><a href="conversion-rate-optimization-lead-generation.html">Conversion Rate Optimization</a></li>
+                        <li><a href="targeted-audience-profiling-lead-generation.html">Targeted Audience Profiling</a></li>
+                        <li><a href="automated-lead-nurturing-campaigns.html">Automated Lead Nurturing Campaigns</a></li>
+                      </ul>
+                   </li>
+                   <li><a href="seo-services-in-pune.html">SEO</a>
+                       <ul class="dropdown-list" style="margin-left: -40px;">
+                        <li><a href="local-seo-services.html">Local SEO Services</a></li>
+                        <li><a href="seo-audit-analysis.html">SEO Audit and Analysis</a></li>
+                        <li><a href="google-map-optimization.html">Google Map Optimization</a></li>
+                     </ul>
+                   </li>
+                   <li><a href="ppc-integration.html">PPC</a>
+                       <ul class="dropdown-list" style="margin-left: -40px;">
+                        <li><a href="ppc-keyword-research-analysis.html">Keyword Research</a></li>
+                        <li><a href="ad-campaign-setup-management.html">Ad Campaign Management</a></li>
+                        <li><a href="landing-page-optimization-ppc.html">Landing Page Optimization</a></li>
+                        <li><a href="ppc-performance-tracking-reporting.html">Performance Tracking</a></li>
+                  </ul>
+                   </li>
+                   <li><a href="other-omnigross-services.html">Other </a>
+                       <ul class="dropdown-list" style="margin-left: -40px;">
+                        <li><a href="whatsapp-marketing-solutions.html">WhatsApp Marketing Services</a></li>
+                        <li><a href="secure-payment-gateway-solutions.html">Payment Gateway Integration</a></li>
+                        <li><a href="professional-email-marketing.html">Email Marketing Solution</a></li>
+                        <li><a href="creative-graphics-design-services.html">Graphics Design Solution</a></li>
+                        <li><a href="website-designing-services.html">Website Designing Services</a></li>
+                        <li><a href="reliable-web-hosting-services.html">Web Hosting Solution</a></li>
+                        <li><a href="enterprise-resource-planning-solutions.html">ERP Solution</a></li>
+                        </ul>
+                   </li>
+               </ul>
+           </li>
+           <li><a href="#">      Blog</a></li></span>
+           <li><a href="#">      Portfolio</a></li></span>
+           <li><a href="contact.html">     Contact</a></li></span>
+           <li>
+               <button class="btn">Get A Quote</button>
+           </li>
+       </ul>
+   </div>
+</nav>
    
    
     
@@ -705,7 +844,25 @@
         </div>
     </footer>
     <!--====== Footer PART ENDS ======-->
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script>
+    // Scroll to top functionality
+    const scrollToTopBtn = document.getElementById("scrollToTop");
+    window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    });
+    scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
 
+   
+</script>
     <!--====== Jquery ======-->
     <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-1.12.4.min.js"></script>
     <!--====== Bootstrap ======-->

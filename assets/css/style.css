@@ -1701,7 +1701,7 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 .header-two {
 	position: absolute;
 	left: 0;
-	top: 45px;
+	top: 85px;
 	width: 100%;
 	z-index: 999;
 }
