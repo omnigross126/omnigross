@@ -6351,8 +6351,26 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 .justify-content-center {
 	margin-right: -22px;
     margin-left: -22px;
-    margin-top: -93px;
-    margin-bottom: -141px;
+  
+}
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .justify-content-center {
+        margin-right: -10px;
+        margin-left: -10px;
+        margin-top: -50px;
+        margin-bottom: -70px;
+    }
+}
+
+/* Media query for screens with a maximum width of 480px */
+@media (max-width: 480px) {
+    .justify-content-center {
+        margin-right: -5px;
+        margin-left: -5px;
+		margin-top: -71px;
+        margin-bottom: -118px;
+    }
 }
 
 .latest-news-box {
