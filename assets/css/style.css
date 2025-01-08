@@ -2880,6 +2880,7 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 	position: relative;
 	padding-left: 145px;
 	padding-right: 145px;
+	margin-top: 94px;
 }
 
 @media (max-width: 767px) {
@@ -11601,3 +11602,10 @@ nav ul.dropdown-list {
     width: 24px; 
     height: 24px;
 } */
+.icon.twitter svg {
+	margin-left: 5px;
+	margin-top: -12px;
+    width: 24px; 
+    height: 24px;
+	color: white;
+}
