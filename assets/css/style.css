@@ -11630,3 +11630,23 @@ nav ul.dropdown-list {
     height: 24px;
 	color: white;
 }
+
+
+.hitCounter {
+	display: block;
+	text-align: center; /* Centers the text inside the link */
+	margin: 0 45%; /* Centers the element horizontally */
+	padding: 10px; /* Adds some padding for better spacing */
+	background-color: #f5f5f5; /* Background color */
+	color: #0099cc; /* Text color */
+	border-radius: 5px; /* Rounded corners */
+	text-decoration: none; /* Removes underline from the link */
+	font-size: 16px; /* Adjust font size */
+	width: fit-content; /* Ensures the width fits the content */
+  }
+  
+  .hitCounter:hover {
+	background-color: #0099cc; /* Background color on hover */
+	color: #f5f5f5; /* Text color on hover */
+	transition: all 0.3s ease; /* Smooth transition */
+  }
