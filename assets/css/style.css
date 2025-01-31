@@ -393,18 +393,24 @@ input[type=checkbox], input[type=radio] {
 @media (min-width: 992px) and (max-width: 1199px) {
 	.section-title-two .title {
 		font-size: 54px;
+		margin-top: 50px;
+        margin-bottom: 98px;
 	}
 }
 
 @media (max-width: 991px) {
 	.section-title-two .title {
 		font-size: 46px;
+		margin-top: 50px;
+        margin-bottom: 98px;
 	}
 }
 
 @media (max-width: 575px) {
 	.section-title-two .title {
 		font-size: 28px;
+		margin-top: 50px;
+        margin-bottom: 98px;
 	}
 }
 
@@ -3572,6 +3578,11 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 	line-height: 1;
 	color: #0c59db;
 	margin-bottom: 30px;
+}
+@media (max-width: 576px) {
+	.service-item-seven .icon {
+		margin-top: 40px;
+	}
 }
 .service-item-seven1 .icon {
 	font-size: 80px;
@@ -8027,6 +8038,7 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 @media (max-width: 575px) {
 	.accordion-three .card .card-body {
 		padding: 0 20px 20px;
+		
 	}
 }
 
@@ -8056,6 +8068,14 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 	font-weight: 400;
 }
 
+@media  (max-width: 575px) {
+	.accordion-three.accordion-three-two {
+		border: none;
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+	
+}
 .accordion-four {
 	border: none;
 }
@@ -8491,6 +8511,7 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 }
 
 .footer-area.footer-area-two {
+	margin-top: 105px;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
@@ -11251,7 +11272,11 @@ body {
    padding: 20px 0;
    position: relative;
 }
-
+.nav-list  .dropdown-list li {
+	margin-left: -30px;
+	padding: 20px 0;
+	position: relative;
+ }
 .nav-wrapper ul.nav-list li a {
    color: #002249;
    text-decoration: none;
@@ -11385,6 +11410,7 @@ nav ul.dropdown-list {
 }
 
 .nav-wrapper ul.dropdown-list {
+	margin-left: -40px;
    opacity: 0; /* Keep this */
    pointer-events: none; /* Keep this ...................*/
 }
