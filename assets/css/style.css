@@ -300,6 +300,7 @@ input[type=checkbox], input[type=radio] {
 	font-size: 60px;
 	font-weight: 700;
 	position: relative;
+	
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -322,6 +323,8 @@ input[type=checkbox], input[type=radio] {
 
 @media (max-width: 575px) {
 	.section-title .title {
+		margin-top: 41px;
+		color: white;
 		font-size: 26px;
 	}
 }
@@ -4392,7 +4395,7 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 
 .features-sub .input-box button {
 	height: 65px;
-	width: 100%;
+	width: 130%;
 	background: #005ec9;
 	border: none;
 	color: #fff;
@@ -5849,7 +5852,7 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 		margin: 0px 5px;
 	}
 	.testimonial-box p {
-		padding: 30px;
+		padding: 28px 0px;
 	}
 }
 
@@ -8071,7 +8074,7 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 @media  (max-width: 575px) {
 	.accordion-three {
 		border: none;
-		margin-top: -71px;
+		margin-top: 46px;
         margin-bottom: 4px;
 	}
 	
@@ -10062,8 +10065,8 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 
 @media (max-width: 575px) {
 	.blog-dteails-content {       
-		margin: 0px -23px;
-		padding: 30px 25px;
+		margin: 0px -33px;
+        padding: 14px 11px;
 	}
 }
 
@@ -10117,6 +10120,7 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 @media (max-width: 575px) {
 	.blog-dteails-content .subtitle {
 		font-size: 20px;
+		margin-top: 68px;
 	}
 }
 
@@ -11237,6 +11241,11 @@ body {
 	/* color: #4f79a9;; */
 	text-decoration: none;
 	margin: 0 10px; /* Space between items */
+}
+
+.navbar-nav li {
+	border-top: 2px solid black;
+    font-size: 20px;
 }
 .navbar a:hover {
 	  color: #0c59db;
