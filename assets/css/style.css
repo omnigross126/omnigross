@@ -11829,3 +11829,17 @@ nav ul.dropdown-list {
 	border-color: #0c59db;
 	color: #fff;
 }
+
+#col-2 {
+	@media  (max-width: 768px) {
+		margin-top:10px
+		
+	}
+}
+
+#firstimg1 {
+	@media  (max-width: 768px) {
+		margin-top:90px
+		
+	}
+}
