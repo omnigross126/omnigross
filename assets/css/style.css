@@ -11676,3 +11676,156 @@ nav ul.dropdown-list {
 	color: #f5f5f5; /* Text color on hover */
 	transition: all 0.3s ease; /* Smooth transition */
   }
+
+
+/* pricing section css  */
+
+.pricing-tab-btn.nav {
+	background: #fff;
+	padding: 10px;
+}
+
+.pricing-tab-btn.nav li a {
+	border-radius: 0;
+	padding: 0 35px;
+	line-height: 60px;
+	color: #69a1bb;
+	font-weight: 700;
+}
+
+.pricing-tab-btn.nav li a.active {
+	color: #fff;
+	background: #0c59db;
+}
+
+.pricing-tab-btn.dark-style {
+	background-color: #002c5f;
+}
+
+.pricing-plan-item {
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 5;
+	padding: 55px 30px 60px;
+	text-align: center;
+}
+
+.pricing-plan-item::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: -1;
+	-webkit-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+
+.pricing-plan-item > * {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+
+.pricing-plan-item .plan-name {
+	font-weight: 700;
+	color: #0c59db;
+	font-size: 14px;
+	text-transform: capitalize;
+	display: block;
+	padding-bottom: 10px;
+}
+
+.pricing-plan-item .price {
+	font-size: 16px;
+}
+
+.pricing-plan-item .price span {
+	font-size: 70px;
+}
+
+.pricing-plan-item .plan-duration {
+	color: #81a3bb;
+	font-size: 14px;
+	text-transform: capitalize;
+	position: relative;
+	margin-bottom: 33px;
+}
+
+.pricing-plan-item .plan-duration::before {
+	position: absolute;
+	content: "";
+	height: 2px;
+	width: 42px;
+	left: 50%;
+	bottom: -20px;
+	background: #69a1bb;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	-webkit-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+	opacity: 0.4;
+}
+
+.pricing-plan-item p {
+	font-size: 14px;
+	color: #69a1bb;
+	-webkit-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+
+.pricing-plan-item .plans-btn {
+	background-color: transparent;
+	border: 2px solid #e3eeff;
+	font-size: 14px;
+	margin-top: 35px;
+	width: 100%;
+	padding: 15px;
+	font-weight: 700;
+	color: #0c59db;
+}
+
+.pricing-plan-item.dark-style::before {
+	background-color: #00152e;
+}
+
+.pricing-plan-item.dark-style .price,
+.pricing-plan-item.dark-style .plan-duration,
+.pricing-plan-item.dark-style .plan-name {
+	color: #fff;
+}
+
+.pricing-plan-item.dark-style .plans-btn {
+	border-color: #1d3d63;
+}
+
+.pricing-plan-item:hover::before {
+	background-color: #0c59db;
+	opacity: 0.9;
+}
+
+.pricing-plan-item:hover .plan-duration,
+.pricing-plan-item:hover .plan-name,
+.pricing-plan-item:hover .price,
+.pricing-plan-item:hover p {
+	color: #fff;
+}
+
+.pricing-plan-item:hover .plan-duration::before {
+	width: 100px;
+	opacity: 1;
+	background-color: #fff;
+}
+
+.pricing-plan-item:hover .plans-btn {
+	background-color: #0c59db;
+	border-color: #0c59db;
+	color: #fff;
+}
