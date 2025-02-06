@@ -8134,7 +8134,7 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 
 .accordion-four .card .card-header a.collapsed {
 	font-size: 16px;
-	color: #436584;
+	color: #196364;
 }
 
 .accordion-four .card .card-header a.collapsed::before {
@@ -8660,7 +8660,7 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 
 /*=======  Page Title  =======*/
 .page-title-area {
-	background: #a9c7ec;
+	background: #196364;
 	position: relative;
 	z-index: 1;
 	text-align: center;
@@ -8681,7 +8681,8 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url(../img/banner/banner-gradient-bg-2.png);
+	background-image: url(../img/banner/banner2.png);
+	
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -11126,8 +11127,8 @@ nav ul.dropdown1-list {
 	margin-top: -10px;
 	list-style-type: none;
 	display: block;
-	background: var(--smoke);
-	padding: 3px 1px;
+	background: #43bfb7;
+	
 	position: absolute;
 	width: max-content;
 	z-index: 9999;
@@ -11141,8 +11142,8 @@ nav ul.dropdown-list {
 	margin-top: -63px;
 	list-style-type: none;
 	display: block;
-	background: var(--smoke);
-	padding: 6px 16px;
+	background: #43bfb7;
+	
 	position: absolute;
 	width: max-content;
 	z-index: 9999;
@@ -11156,11 +11157,12 @@ nav ul.dropdown-list {
 .nav-wrapper ul.dropdown1-list li {
    position: relative;
    margin-left: 0;
-   padding: 5px 0;
+   padding: 0px 0;
+   border-top: 2px solid #196364;
 }
 
 .nav-wrapper ul.dropdown1-list  li a {
-   color: var(--dark);
+   color: white;
 } 
 
 .nav-wrapper ul.nav-list li:hover .dropdown1-list {
@@ -11170,24 +11172,25 @@ nav ul.dropdown-list {
 }
 
 .nav-wrapper ul.dropdown-list {
-	margin-left: -40px;
+	margin-left: -75px;
    opacity: 0; /* Keep this */
    pointer-events: none; /* Keep this ...................*/
 }
 
 .nav-wrapper ul.dropdown-list li {
    margin-left: 0;
-   padding: 5px 0;
+   padding: 0px 0;
 }
 
 .nav-wrapper ul.dropdown-list  li a {
-   color: var(--dark);
+   color: white;
 } 
 
 .nav-wrapper ul.nav-list .dropdown1-list li:hover .dropdown-list {
    opacity: 1;
    pointer-events: auto;
    animation: moveUp .3s ease-in-out forwards;
+   color: #43bfb7;
 }
 
 @keyframes moveUp {
