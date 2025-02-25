@@ -149,6 +149,7 @@ p.text-color-3 {
 }
 
 p.fs-16 {
+	margin-top: 47px;
 	font-size: 16px;
 }
 
@@ -324,9 +325,8 @@ input[type=checkbox], input[type=radio] {
 
 @media (max-width: 575px) {
 	.section-title .title {
-		margin-top: 41px;
-		color: white;
-		font-size: 26px;
+		margin-top: 6px;
+		font-size: 35px;
 	}
 }
 
@@ -609,10 +609,17 @@ input[type=checkbox], input[type=radio] {
 }
 
 .bg-cover {
+	margin-top:30px;
 	background-size: cover;
 	background-position: center;
 }
-
+@media (max-width: 575px) {
+	.bg-cover {
+		margin-top: 100px;
+		background-size: cover;
+		background-position: center;
+	}
+}
 /*======= Preloader =======*/
 div#preloader {
 	margin: auto;
@@ -2965,8 +2972,7 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 .banner-section-three .banner-content p {
 	font-size: 24px;
 	color: #fff;
-	opacity: 0.8;
-	margin-top: -10px;
+	margin-top: 11px;
 	padding-bottom: 26px;
 }
 
@@ -5298,7 +5304,13 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 	background-size: cover;
 	background-position: center;
 	background-image: url(../img/video.jpg);
-	padding: 100px 0 50px;
+	padding: 50px 0 50px;
+}
+
+.brand-item img{
+	margin: 13px 50px -8px 9px;
+	width: 200px;
+	height: 50px;
 }
 
 .faq-counter-boxes-two.row {
@@ -7744,6 +7756,14 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 	z-index: 1;
 }
 
+@media (max-width: 575px) {
+	.intro-video-with-shape {
+		position: relative;
+		z-index: 1;
+		margin-top: 170px;
+	}
+}	
+
 .intro-video-with-shape::before {
 	position: absolute;
 	content: "";
@@ -7759,6 +7779,7 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 @media (max-width: 575px) {
 	.intro-video-with-shape::before {
 		border-width: 200px;
+		
 	}
 }
 
@@ -7788,6 +7809,7 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 		-webkit-transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
+	
 	}
 }
 
@@ -8681,7 +8703,7 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url(../img/banner/banner1.png);
+	background-image: url(../img/banner/banner1:.png);
 	
 	background-repeat: no-repeat;
 	background-size: cover;
