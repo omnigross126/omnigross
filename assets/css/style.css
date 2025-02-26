@@ -326,6 +326,7 @@ input[type=checkbox], input[type=radio] {
 @media (min-width: 992px) and (max-width: 1199px) {
 	.section-title .title {
 		font-size: 42px;
+		color:#196364;
 	}
 }
 
@@ -351,7 +352,7 @@ input[type=checkbox], input[type=radio] {
 .section-title.white-color .title-tag,
 .section-title.white-color .title,
 .section-title.white-color p {
-	color: #fff;
+	color: #196364;
 }
 
 .section-title.with-right-border .title-tag {
@@ -8744,12 +8745,14 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 @media (max-width: 991px) {
 	.page-title-area .title {
 		font-size: 62px;
+		
 	}
 }
 
 @media (max-width: 575px) {
 	.page-title-area .title {
 		font-size: 38px;
+		
 	}
 }
 
