@@ -153,6 +153,24 @@ p.fs-16 {
 	font-size: 16px;
 }
 
+/* Mobile view */
+@media only screen and (max-width: 768px) {
+    .experience-text {
+        margin-top: -59px;
+        margin-bottom: 56px;
+        font-size: 14px;
+    }
+}
+
+/* Smaller mobile devices */
+@media only screen and (max-width: 480px) {
+    .experience-text{
+        margin-top: -59px;
+        margin-bottom: 56px;
+        font-size: 12px;
+    }
+}
+
 a {
 	-webkit-transition: all 0.3s ease-out 0s;
 	-o-transition: all 0.3s ease-out 0s;
@@ -5306,6 +5324,13 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 	background-image: url(../img/video.jpg);
 	padding: 50px 0 50px;
 }
+@media only screen and (max-width: 768px) {
+    .counter-section-two {
+        margin-top: 25%;
+    }
+}
+
+
 
 .brand-item img{
 	margin: 13px 50px -8px 9px;
@@ -11628,3 +11653,7 @@ nav ul.dropdown-list {
 		
 	}
 }
+
+
+
+ 
