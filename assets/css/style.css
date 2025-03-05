@@ -3007,6 +3007,18 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 	}
 }
 
+@media (max-width: 767px) {
+	.banner-section-three .banner-content h1 {
+		font-size:10px
+	}
+}
+
+@media (max-width: 575px) {
+	.banner-section-three .banner-content h1 {
+		font-size: 10px;
+	}
+}
+
 .banner-section-three .banner-shapes .shape-one,
 .banner-section-three .banner-shapes .shape-two {
 	position: absolute;
@@ -3022,7 +3034,44 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
     right: -136px;
     width: 29%;
 }
+@media only screen and (max-width: 480px) {
+    .banner-section-three .banner-shapes .shape-one {
+		position: absolute;
+        top: 97px;
+        left: -40px;
+        width: 52%;
+        z-index: -1;
+    }
+}
 
+@media only screen and (max-width: 320px) {
+    .banner-section-three .banner-shapes .shape-one {
+        position: absolute;
+	top: -29px;
+    left: -111px;
+    width: 44%;
+	z-index: -1;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .banner-section-three .banner-shapes .shape-two {
+		width: 138px;
+        height: 151px;
+        left: 89%;
+        margin-top: -10px;
+        transform: translateX(-50%);
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .banner-section-three .banner-shapes .shape-two {
+        width: 20px; /* Adjusted width */
+        height: 20px; /* Adjusted height */
+        left: 50%; /* Adjusted left position */
+        transform: translateX(-50%); /* Adjusted transform */
+    }
+}
 .banner-section-three .brand-slider {
 	position: absolute;
 	left: 0;
