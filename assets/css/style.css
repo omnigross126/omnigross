@@ -3056,9 +3056,9 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 
 @media only screen and (max-width: 480px) {
     .banner-section-three .banner-shapes .shape-two {
-		width: 138px;
-        height: 151px;
-        left: 89%;
+		width: 152px;
+        height: 160px;
+        left: 84%;
         margin-top: -10px;
         transform: translateX(-50%);
     }
@@ -5383,9 +5383,9 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 
 
 .brand-item img{
-	margin: 13px 50px -8px 9px;
-	width: 200px;
-	height: 50px;
+	margin: 34px -48px -8px -33px;
+    width: 207px;
+    height: 53px;
 }
 
 .faq-counter-boxes-two.row {
