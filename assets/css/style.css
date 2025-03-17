@@ -54,8 +54,7 @@ body {
 	font-family: "Karla", sans-serif;
 	color: #616161;
 	overflow-x: hidden;
-	width: 100%;
- 	height: 100vh;
+	
 }
 
 * {
@@ -11715,6 +11714,6 @@ nav ul.dropdown-list {
 
 @media only screen and (max-width: 768px) {
 	html[lang="zxx"] {
-	  overflow: hidden;
+	  overflow-x: hidden;
 	}
   }
