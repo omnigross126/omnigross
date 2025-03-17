@@ -54,6 +54,8 @@ body {
 	font-family: "Karla", sans-serif;
 	color: #616161;
 	overflow-x: hidden;
+	width: 100%;
+ 	height: 100vh;
 }
 
 * {
@@ -2965,7 +2967,7 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 }
 
 .banner-section-three .banner-content .title {
-	font-size: 117px;
+	font-size: 100px;
 	color: #fff;
 }
 
@@ -5377,6 +5379,9 @@ div#preloader .loader-cubes .loader-cube .loader-cube3::before {
 @media only screen and (max-width: 768px) {
     .counter-section-two {
         margin-top: 25%;
+    }
+	.counter-section-two .brand-item:nth-child(n+5) {
+        display: none;
     }
 }
 
@@ -11708,4 +11713,8 @@ nav ul.dropdown-list {
 
 
 
- 
+@media only screen and (max-width: 768px) {
+	html[lang="zxx"] {
+	  overflow: hidden;
+	}
+  }
